@@ -1,0 +1,6 @@
+@use "../custom_variables" as *;
+
+p {
+  font-size: 16px;
+  color: $custom-variable;
+}
