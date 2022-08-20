@@ -1,0 +1,57 @@
+@use "../hyun-variables" as *;
+
+// Color
+.border-primary {
+  border-color: var(--theme-primary) !important;
+}
+
+.border-secondary {
+  border-color: var(--theme-secondary) !important;
+}
+
+.border-white {
+  border-color: $hyun-white !important;
+}
+
+// Side
+.border {
+  border: $hyun-border-width-xs solid;
+}
+
+.border-left {
+  border-left: $hyun-border-width-xs solid;
+}
+
+.border-right {
+  border-right: $hyun-border-width-xs solid;
+}
+
+.border-top {
+  border-top: $hyun-border-width-xs solid;
+}
+
+.border-bottom {
+  border-bottom: $hyun-border-width-xs solid;
+}
+
+// Width
+.border-width-xs {
+  border-width: $hyun-border-width-xs !important;
+}
+
+.border-width-sm {
+  border-width: $hyun-border-width-sm !important;
+}
+
+.border-width-md {
+  border-width: $hyun-border-width !important;
+}
+
+// Radius {
+.br-md {
+  border-radius: $hyun-border-radius;
+}
+
+.br-sm {
+  border-radius: $hyun-border-radius-sm;
+}
