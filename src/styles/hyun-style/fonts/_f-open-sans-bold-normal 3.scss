@@ -1,0 +1,12 @@
+@use "../hyun-variables" as *;
+/* stylelint-disable */
+
+@font-face {
+  font-family: Opensans-Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("#{$font-url}family=Open+Sans&display=swap.woff2") format('woff2');
+}
+
+/* stylelint-enable */

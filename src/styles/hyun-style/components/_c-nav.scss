@@ -1,0 +1,115 @@
+@use "../../foundation/variables" as *;
+@use "../hyun-variables" as *;
+
+.hyun-nav {
+  width: 100%;
+
+  &.show {
+    opacity: 1;
+  }
+
+  &__absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__animated {
+    opacity: 0;
+    transition: all .5s .8s ease-in-out;
+  }
+}
+
+.nav-link,
+.nav-link-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: $hyun-white;
+  padding: 0 $spacer-2;
+  height: 6rem;
+  font-family: $headings-font-family;
+  font-size: $font-size-base;
+  text-decoration: none;
+  z-index: 0;
+  transition: .2s ease-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 75%;
+    width: 1px;
+    background-color: $hyun-white;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 0;
+    background-color: $hyun-white;
+    z-index: -1;
+    transition: 0.2s ease-out;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--theme-primary);
+    transition: 0.2s ease-in;
+
+    &::after {
+      width: 102%;
+      transition: 0.2s ease-in;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.nav-link {
+  &:last-of-type {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.nav-link-icon {
+  svg {
+    stroke: $hyun-white;
+    transition: 0.2s ease-out;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      stroke: var(--theme-primary);
+      transition: 0.2s ease-in;
+    }
+  }
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, sm)) {
+  .nav-link,
+  .nav-link-icon {
+    padding: 0 $spacer-3;
+    font-size: $font-size-xl;
+  }
+}
+
+// Footer
+.footer-img {
+  border-radius: 50%;
+  width: 8.5rem;
+  transform: translateY(-2rem);
+  z-index: 2;
+}
+
+.footer {
+  background: linear-gradient(180deg, $hyun-white 30%, var(--theme-primary) 250%);
+}

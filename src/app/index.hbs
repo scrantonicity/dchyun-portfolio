@@ -13,7 +13,115 @@
   </head>
 
   <body>
+    <div class="page-wrapper">
+      <div class="vh-100 bg-primary section-hero">
+        {{> partials/navigation-home}}
+        <div class="hero pt-3 pt-sm-0 px-2">
+          <div class="hero-icons">
+            <svg class="hyun-logo hero-icon icon-size-display icon-stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.11 260.75">
+              <path class="hyun-logo__letter letter-d" d="M.05 9.5s149.54.08 150.19 120C150.89 249.89.05 250.7.05 250.7" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <path class="hyun-logo__letter letter-c" d="M160.06 10S10.51 10.13 9.87 130c-.65 120.39 150.19 121.2 150.19 121.2" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <line class="hyun-logo__letter letter-h-left" x1="9.57" x2="9.57" y1="2.12" y2="258.08" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <line class="hyun-logo__letter letter-h-right" x1="150.57" x2="150.57" y1="2.85" y2="258.97" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <line class="hyun-logo__letter letter-h-center" x1=".05" x2="160.05" y1="130.48" y2="130.48" style="fill:none;stroke-linejoin:bevel;stroke-width:19px"/>
+            </svg>
+            <svg class="hyun-illustration hero-icon icon-fill-white h4 hidden" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 260.56 260.56">
+              <circle cx="130.28" cy="130.28" r="119.41" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="106.49" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="93.57" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="80.65" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="67.72" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="54.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="41.88" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <circle cx="130.28" cy="130.28" r="28.96" fill="#fff"></circle>
+              <circle cx="130.28" cy="130.28" r="26.63" fill="none" stroke="#d9064e" stroke-miterlimit="10" stroke-width="1"></circle>
+              <path id="outer-text-1" fill="none" d="M260.56 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Zm130.28 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Z"></path>
+              <path id="outer-text-2" fill="none" d="M260.56 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Zm130.28 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Z"></path>
+              <text dx="400">
+                <textPath href="#outer-text-1" fill="#fff">
+                  UI Development
+                </textPath>
+              </text>
+              <text dx="30">
+                <textPath href="#outer-text-2" fill="#fff">
+                  UX Design
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <h1 class="mb-0 mt-2 mt-sm-5 text-white hyun-title">Dylan C Hyun</h1>
+        </div>
+        <div class="bg-lines hidden">
+          <div class="line line-top-home line-left"></div>
+          <div class="line line-top-home line-center"></div>
+          <div class="line line-top-home line-right"></div>
+        </div>
+      </div>
+      <div class="bg-white container position-relative section-projects">
+        <div class="bg-lines">
+          <div class="line line-primary line-left"></div>
+          <div class="line line-primary line-center"></div>
+          <div class="line line-primary line-right"></div>
+        </div>
+        <div class="row pt-6 pb-7">
+          <div class="col d-flex align-items-cetner justify-content-center">
+            <svg class="text-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.55 62.78" style="background-color: #fff;">
+              <path id="text-circle" fill="none" d="M.13 62.78a62.64 62.64 0 1 1 125.29 0"/>
+              <text aria-hidden="true" dx="13">
+                <textPath href="#text-circle">
+                  My Projects
+                </textPath>
+              </text>
+            </svg>
+            <h2 class="sr-only">My Projects</h2>
+          </div>
+        </div>
+        <div class="row pb-6">
+          <div class="col">
+            <div class="project-card project-card__lg theme-prudential row">
+              <div class="project-card__content col-md-6 col-12 pr-0 pr-md-6 d-flex flex-column">
+                <h3 class="mb-0">Evolution Design System</h3>
+                <h4 class="text-lg font-weight-light mb-4">Prudential</h4>
+                <p class="mb-4 mb-md-0">Building a new company-wide design system from the ground up. Leading the digital “evolution” of a 140 year old company to redefine its standing in the financial services industry.</p>
+                <a class="project-card__link mt-auto" href="./evolution.html"><span class="link-text">Explore Project</span></a>
+              </div>
+              <div class="project-card__image col-md-6 col-12 pl-0 pl-md-6 pb-md-0 pb-4">
+                <img src="./assets/evolution-sq.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-6">
+          <div class="col-md-5 col-12 pb-6 pb-md-0">
+            <div class="project-card theme-fw">
+              <div class="project-card__image pb-3">
+                <img src="./assets/prudential.png">
+              </div>
+              <div class="project-card__content">
+                <h3 class="h4 mb-0">Animated Icon Library</h3>
+                <h4 class="h5 font-weight-light mb-4">Prudential</h4>
+                <a class="project-card__link mt-auto" href="#"><span class="link-text">Explore Project</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 offset-md-2 offset-0 col-12">
+            <div class="project-card theme-cluster">
+              <div class="project-card__image pb-3">
+                <img src="./assets/prudential.png">
+              </div>
+              <div class="project-card__content">
+                <h3 class="h4 mb-0">Cluster</h3>
+                <h4 class="h5 font-weight-light mb-4">Deloitte Innovation Competition</h4>
+                <a class="project-card__link mt-auto" href="#"><span class="link-text">Explore Project</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{> partials/footer-home}}
+    </div>
     {{> partials/scripts}}
+    <script src="./home.js"></script>
   </body>
 
 </html>

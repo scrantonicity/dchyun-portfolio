@@ -1,0 +1,101 @@
+@use "../../foundation/variables" as *;
+@use "../hyun-variables" as *;
+
+.bg-lines {
+  opacity: 1;
+  transition: all .5s .8s ease-in-out;
+
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+$width-diff: 21px;
+$height: 10vh;
+$height-diff: 3vh;
+
+.line {
+
+  &.line-top-home {
+    &.line-left,
+    &.line-right {
+      &::before {
+        top: 100vh - ($height - $height-diff);
+        height: $height - $height-diff;
+      }
+    }
+
+    &.line-center {
+      &::before {
+        top: 100vh - $height;
+        height: $height;
+      }
+    }
+  }
+
+  &.line-top {
+    &.line-left,
+    &.line-right {
+      &::before {
+        top: $height-diff;
+        // height: $height - $height-diff;
+      }
+    }
+
+    &.line-center {
+      &::before {
+        top: 0;
+        // height: $height;
+      }
+    }
+  }
+
+  &.line-bottom {
+    &.line-left,
+    &.line-right {
+      &::before {
+        height: 0;
+      }
+    }
+
+    &.line-center {
+      &::before {
+        bottom: 100vh - $height-diff;
+        height: $height-diff;
+      }
+    }
+  }
+
+  &.line-left {
+    &::before {
+      left: calc(50% - $width-diff);
+    }
+  }
+
+  &.line-center {
+    &::before {
+      left: 50%;
+    }
+  }
+
+  &.line-right {
+    &::before {
+      left: calc(50% + $width-diff);
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: $hyun-white;
+    width: 3px;
+    transform: translateX(-50%);
+  }
+
+  &.line-primary::before {
+    background-color: var(--theme-primary);
+    opacity: .15;
+  }
+}

@@ -1,8 +1,8 @@
 {
-  "name": "starter-project",
-  "description": "Webcomponent starter-project following open-wc recommendations",
+  "name": "dylan-hyun-portfolio",
+  "description": "Dylan Hyun Portfolio",
   "license": "MIT",
-  "author": "starter-project",
+  "author": "Dylan Hyun",
   "version": "0.0.0",
   "scripts": {
     "lint": "eslint --ext .ts,.html . --ignore-path .gitignore && prettier \"**/*.ts\" --check --ignore-path .gitignore",
@@ -17,7 +17,7 @@
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build-styles": "npm run build:dev-styles-all",
     "lint-styles": "stylelint ./src/styles/**/*.scss",
-    "build:dev-styles-all": "sass ./src/styles/custom-library/custom.scss ./dist/custom-library.min.css --style compressed",
+    "build:dev-styles-all": "sass ./src/styles/hyun-style/hyun.scss ./dist/hyun-style.min.css --style compressed",
     "build-pages": "webpack --config webpack.config.js"
   },
   "dependencies": {

@@ -1,0 +1,44 @@
+@use "../hyun-variables" as *;
+
+// Size
+.icon-size-sm {
+  height: $icon-size-sm;
+}
+
+.icon-size-md {
+  height: $icon-size-md;
+}
+
+.icon-size-lg {
+  height: $icon-size-lg;
+}
+
+.icon-size-display {
+  height: $icon-size-display;
+}
+
+// Fill
+.icon-fill-white {
+  fill: $hyun-white;
+}
+
+.icon-fill-primary {
+  fill: var(--theme-primary);
+}
+
+.icon-fill-secondary {
+  fill: var(--theme-secondary);
+}
+
+// Stroke
+.icon-stroke-white {
+  stroke: $hyun-white;
+}
+
+.icon-stroke-primary {
+  stroke: var(--theme-primary);
+}
+
+.icon-stroke-secondary {
+  stroke: var(--theme-secondary);
+}

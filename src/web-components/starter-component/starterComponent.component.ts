@@ -1,8 +1,6 @@
 import { LitElement, html, css } from 'lit';
 import { property, customElement } from 'lit/decorators.js';
 
-const logo = new URL('../../assets/open-wc-logo.svg', import.meta.url).href;
-
 @customElement('starter-component')
 export class StarterComponent extends LitElement {
   @property({ type: String }) title = 'My app';
@@ -53,7 +51,6 @@ export class StarterComponent extends LitElement {
   render() {
     return html`
       <main>
-        <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.title}</h1>
 
         <p>Edit <code>src/StarterProject.ts</code> and save to reload.</p>

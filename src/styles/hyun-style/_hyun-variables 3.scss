@@ -1,0 +1,103 @@
+@use "../foundation/variables" as *;
+
+$variable-prefix: hyun-;
+
+// Colors
+
+// Primary
+$hyun-red: #d9064e;
+$pru-primary: #06c;
+$fw-primary: #b9952a;
+$cluster-primary: #e38029;
+$birds-primary: #009444;
+
+// Secondary
+$hyun-white: #fff;
+$pru-secondary: #ffd200;
+
+// Text
+$hyun-text: #1e1c1a;
+$hyun-text-light: #686868;
+
+// Grays
+$hyun-gray-light: #eee;
+
+// Spacing
+$spacer: 2.4rem;
+$spacers: (
+  0: 0,
+  1: .8rem,
+  2: 1.2rem,
+  3: 1.8rem,
+  4: $spacer,
+  5: 3.2rem,
+  6: 4rem,
+  7: 6rem,
+);
+
+$spacer-1: map-get($spacers, 1);
+$spacer-2: map-get($spacers, 2);
+$spacer-3: map-get($spacers, 3);
+$spacer-4: map-get($spacers, 4);
+$spacer-5: map-get($spacers, 5);
+$spacer-6: map-get($spacers, 6);
+$spacer-7: map-get($spacers, 7);
+
+// Grid
+$gutter: 5vw;
+$gutters: (
+  sm: $gutter,
+  md: 8vw,
+  lg: 10vw,
+  xl: 10vw
+);
+
+// Typography
+$font-family-base: "Open Sans", Opensans-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$font-size-root: 62.5%;
+$font-size-base: 1.6rem;
+
+$body-color: $hyun-text;
+
+$font-size-xs: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-lg: 1.8rem;
+$font-size-xl: 2rem;
+
+$h1-font-size: 6rem;
+$h2-font-size: 5rem;
+$h3-font-size: 4rem;
+$h4-font-size: 3.2rem;
+$h5-font-size: 2.4rem;
+$h6-font-size: 1.8rem;
+
+$headings-margin-bottom: .5em;
+$headings-font-family: Josefin Sans, "Josefinsans-Regular", sans-serif;
+$headings-font-weight: 400;
+
+$font-url: "https://fonts.googleapis.com/css2?";
+
+// Borders
+$hyun-border-width-xs: 1px;
+$hyun-border-width-sm: 3px;
+$hyun-border-width: 5px;
+
+$hyun-border-radius-sm: 2rem;
+$hyun-border-radius: 3rem;
+
+// Icons
+$icon-size-sm: 2rem;
+$icon-size-md: 2.4rem;
+$icon-size-lg: 4rem;
+$icon-size-display: 20rem;
+
+// Animation
+$animation-duration-1: .15s;
+$animation-duration-2: .2s;
+$animation-duration-3: .35s;
+$animation-duration-4: .4s;
+
+$animation-easing-ease-in: ease-in;
+$animation-easing-ease-out: ease-out;
+$animation-easing-ease-in-out: ease-in-out;

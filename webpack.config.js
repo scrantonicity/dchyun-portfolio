@@ -5,8 +5,11 @@ const webpack = require('webpack');
 module.exports = {
   mode: 'production',
   entry: {
-    bundle: './src/app.js'
-  } ,
+    bundle: './src/app.js',
+    home: './src/scripts/home.js',
+    'project-detail': './src/scripts/project-detail.js',
+    evolution: './src/scripts/evolution.js'
+  },
   output: {
     path: path.resolve(__dirname, './dist'),
     assetModuleFilename: 'assets/[name][ext][query]'
@@ -14,7 +17,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/i,
         type: 'asset/resource',
       },
     ]
@@ -29,7 +32,7 @@ module.exports = {
       output: path.join(__dirname, "dist", "[name].html"),
       // you can also add a [path] variable, which will emit the files with their relative path, like
       // output: path.join(process.cwd(), "build", [path], "[name].html"),
-      
+
       // data passed to main hbs template: `main-template(data)`
       // data: require(".src/app/data/project.json"),
       // or add it as filepath to rebuild data on change using webpack-dev-server

@@ -1,0 +1,44 @@
+@use './variables' as *;
+@use './mixins/m-grid' as *;
+
+// Container
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: map-get($gutters, sm);
+  padding-right: map-get($gutters, sm);
+
+  @media screen and (min-width: map-get($grid-breakpoints, md)) {
+    padding-left: map-get($gutters, md);
+    padding-right: map-get($gutters, md);
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, lg)) {
+    padding-left: map-get($gutters, lg);
+    padding-right: map-get($gutters, lg);
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, xl)) {
+    padding-left: map-get($gutters, xl);
+    padding-right: map-get($gutters, xl);
+  }
+}
+
+// Row
+
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+
+    > * {
+      @include make-col-ready();
+    }
+  }
+}
+
+
+// Columns
+
+@if $enable-grid-classes {
+  @include make-grid-columns();
+}
