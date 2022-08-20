@@ -33,6 +33,15 @@ $height-diff: 3vh;
     }
   }
 
+  // &.line-top-footer {
+  //   &.line-center {
+  //     &::before {
+  //       bottom: 0;
+  //       height: $height - $height-diff;
+  //     }
+  //   }
+  // }
+
   &.line-top {
     &.line-left,
     &.line-right {

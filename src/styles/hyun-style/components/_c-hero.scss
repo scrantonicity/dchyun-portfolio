@@ -11,9 +11,16 @@
   }
 
   .hyun-title {
+    font-size: $h3-font-size;
     text-align: center;
     opacity: 0;
     animation: fade-in .5s 3.3s ease-in-out forwards;
+  }
+
+  @media screen and (min-width: map-get($grid-breakpoints, sm)) {
+    .hyun-title {
+      font-size: $h1-font-size;
+    }
   }
 
   .hyun-logo {

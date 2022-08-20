@@ -1,0 +1,40 @@
+@use "../../foundation/variables" as *;
+@use "../hyun-variables" as *;
+
+.btn-pill {
+  color: var(--theme-primary);
+  background-color: $hyun-white;
+  border: 2px solid var(--theme-primary);
+  border-radius: $hyun-border-radius-sm;
+  font-size: $font-size-sm;
+  text-decoration: none;
+  padding: .4rem $spacer-1;
+  transition: $animation-duration-1 $animation-easing-ease-in-out;
+
+  svg {
+    fill: var(--theme-primary);
+    stroke: var(--theme-primary);
+    transition: $animation-duration-1 $animation-easing-ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    color: $hyun-white;
+    background-color: var(--theme-primary);
+
+    svg {
+      fill: $hyun-white;
+      stroke: $hyun-white;
+    }
+  }
+}
+
+.btn-sm-full-width {
+  width: 100%;
+}
+
+@media screen and (min-width: map-get($grid-breakpoints, sm)) {
+  .btn-sm-full-width {
+    width: initial;
+  }
+}
