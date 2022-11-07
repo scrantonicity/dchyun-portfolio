@@ -8,7 +8,13 @@ module.exports = {
     bundle: './src/app.js',
     home: './src/scripts/home.js',
     'project-detail': './src/scripts/project-detail.js',
-    evolution: './src/scripts/evolution.js'
+    evolution: './src/scripts/evolution.js',
+    cluster: './src/scripts/cluster.js',
+    'cms-migration': './src/scripts/cms-migration.js',
+    about: './src/scripts/about.js',
+    'project-card-cluster': './src/scripts/project-card-cluster.js',
+    'project-card-dev': './src/scripts/project-card-dev.js',
+    'project-card-evolution': './src/scripts/project-card-evolution.js',
   },
   output: {
     path: path.resolve(__dirname, './dist'),

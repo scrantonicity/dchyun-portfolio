@@ -1,5 +1,4 @@
 // Assets
-import prudential from '../app/assets/prudential.png';
 import pruHero from '../app/assets/pru-hero.png'
 import evolutionSq from '../app/assets/evolution-sq.jpg';
 

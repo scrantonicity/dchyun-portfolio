@@ -47,11 +47,15 @@
   border-width: $hyun-border-width !important;
 }
 
-// Radius {
-.br-md {
-  border-radius: $hyun-border-radius;
+// Radius
+.br-xs {
+  border-radius: $hyun-border-radius-xs;
 }
 
 .br-sm {
   border-radius: $hyun-border-radius-sm;
+}
+
+.br-md {
+  border-radius: $hyun-border-radius;
 }

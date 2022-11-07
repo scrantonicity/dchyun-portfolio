@@ -30,12 +30,22 @@
   width: 100%;
 }
 
+.project__img-bordered {
+  border: $hyun-border-width-xs solid var(--theme-primary);
+  border-radius: $hyun-border-radius-xs;
+}
+
 .project__img-full-width {
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 3 / 1;
+}
+
+.project__img-wrapper {
+  margin: 0;
+  margin-top: $spacer-4;
 }
 
 // Tracker

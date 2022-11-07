@@ -19,8 +19,14 @@ body {
   --theme-text: #{$hyun-white};
 }
 
-.theme-fw {
-  --theme-primary: #{$fw-primary};
+// .theme-fw {
+//   --theme-primary: #{$fw-primary};
+//   --theme-secondary: #{$hyun-white};
+//   --theme-text: #{$hyun-white};
+// }
+
+.theme-help {
+  --theme-primary: #{$help-primary};
   --theme-secondary: #{$hyun-white};
   --theme-text: #{$hyun-white};
 }

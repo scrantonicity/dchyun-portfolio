@@ -1,0 +1,7 @@
+@use "../../foundation/variables" as *;
+@use "../hyun-variables" as *;
+
+a {
+  font-weight: 700;
+  color: var(--theme-primary);
+}

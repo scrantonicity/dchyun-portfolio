@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="{{page.author}}">
+    <meta name="keywords" content="{{page.keywords}}">
+    <meta name="{{page.name}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="{{page.favicon}}" type="image/png" sizes="16x16">
+    <title>{{page.title}}</title>
+    {{> partials/head}}
+  </head>
+  </head>
+
+  <body>
+    <div class="page-wrapper theme-hyun">
+      {{> partials/navigation}}
+      <div class="container bg-white">
+        <div class="row py-7">
+          <div class="col-lg-7 col-12 pb-lg-0 pb-6 pr-lg-4 pr-0">
+            <h1 class="project__title text-primary mb-5">About Dylan</h1>
+            <p class="text-lg">Hi there, it's me Dylan.</p>
+            <p class="text-lg">I'm a creative problem solver working at the intersection of technology, design, and data to craft meaningful digital experiences. I pride myself on blending my variety of skills from human-centered design to data analysis to software development, communicating effectively with people across all fields, and finding creative solutions to complex problems.</p>
+            <p class="text-lg">Currently I'm enjoying living in the NYC area as a UI designer / developer at Prudential. When I'm not “making buttons look pretty” as I tell my friends, you can find me roaming around anywhere with my camera, or wishing I was back in the mountains in my home state of Colorado.</p>
+          </div>
+          <div class="col-lg-5 col-12">
+            <img class="border border-primary border-width-sm br-md w-100" src="./assets/profile.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      {{!-- <div class="container bg-gray-light">
+        <div class="row pt-6 pb-6">
+          <div class="col d-flex align-items-center justify-content-center">
+            <img class="w-100" alt="Layout of buttons, cards, typography, colors for new design system" src="./assets/about-header.jpg">
+          </div>
+        </div>
+      </div> --}}
+      <div class="project__img-full-width" style="background-image: url('./assets/about-header.jpg');">
+      </div>
+      <div class="container bg-white">
+        <div class="row py-6 gx-md-lg gx-md">
+          <div class="col-2 d-md-block d-none">
+            <ul class="project__tracker list-unstyled">
+              <li class="tracker-step"><a href="#values">Values</a></li>
+              <li class="tracker-step"><a href="#passions">Passions</a></li>
+              <li class="tracker-step"><a href="#process">Process</a></li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-12">
+            <div class="project__section">
+              <h2 class="project__anchor text-primary" id="values">My Values</h2>
+              <div class="row">
+                <div class="col-lg-4 col-12">
+                  <h3 class="h5 font-weight-bold text-primary font-open-sans">Variety of Perspectives</h3>
+                  <p>The more opportunities people of different disciplines and perspectives get to work together, the more thoughtful and complete work they will complete together.</p>
+                </div>
+                <div class="col-lg-4 col-12 pt-lg-0 pt-3">
+                  <h3 class="h5 font-weight-bold text-primary font-open-sans">Attention to Detail</h3>
+                  <p>Whether it's the analysis of a user testing report, or the padding on a button, taking the time and effort to get the little things right is what sets the groundwork for greater successes.</p>
+                </div>
+                <div class="col-lg-4 col-12 pt-lg-0 pt-3">
+                  <h3 class="h5 font-weight-bold text-primary font-open-sans">Universal Design</h3>
+                  <p>Designing for anyone helps everyone. When we create experiences that can be accessed and understood regardless of a person's abilities, it benefits all users. Good design is not good, if it is only good for certain people.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project__section">
+              <h2 class="project__anchor text-primary" id="passions">My Passions</h2>
+              <h3 class="h5 font-weight-bold mt-content text-primary font-open-sans">Design Systems</h3>
+              <p>Having been working on a design system team for 3 years now, I've seen first hand the impact of the design systems I've created. I've grown an appreciation for how a design system can create a foundation for both design and development to improve their work.</p>
+              <p>Sitting at the intersection of design and development, I appreciate how a design system requires the coordination of the two to create something that benefits everyone.</p>
+              <h3 class="h5 font-weight-bold mt-content text-primary font-open-sans">Designer / Developer Collaboration</h3>
+              <p>Design and development are inseparable. Designers and developers should be the same. More than any work I create, I enjoy being able to work with design and development to help them work together.</p>
+              <p>Whether it's sitting with a designer to talk about how they could make changes to reduce development time, or helping a developer understand the feedback a designer has left for them, I'm always trying to merge the two together to work from a shared viewpoint.</p>
+            </div>
+            <div class="project__section">
+              <h2 class="project__anchor text-primary" id="process">My Process</h2>
+              <h3 class="h5 font-weight-bold mt-content text-primary font-open-sans">Early Development Involvment</h3>
+              <p>When working with a designer, I bring in development to review their work before it is even presented to stakeholders. This ensures that the development feasibility and level of effort is considered before any decisions are made. It also allows the developers to learn the design intention and benefit to the user of the work they're asked to take on.</p>
+              <h3 class="h5 font-weight-bold mt-content text-primary font-open-sans">1 on 1 Design QA</h3>
+              <p>Before any development work is completed, it needs to have final review by the designer. When these reviews involve a designer and developer sitting together to discuss any feedback, it lets both sides understand what the issues are, and how to best address them.</p>
+              <h3 class="h5 font-weight-bold mt-content text-primary font-open-sans">ADA Sign Off</h3>
+              <p>I strongly believe that any experience that a user interacts with should be accessible to all users. Before any development work is seen by customers it should be reviewed by an ADA professional, and approved following <a href="https://www.w3.org/TR/WCAG21/" target="_blank">WCAG standards</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container bg-white position-relative">
+        <div class="bg-lines">
+          <div class="line line-primary line-top line-left"></div>
+          <div class="line line-primary line-top line-center"></div>
+          <div class="line line-primary line-top line-right"></div>
+        </div>
+        <div class="row py-7">
+          <div class="col d-flex align-items-cetner justify-content-center">
+            <svg class="text-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.55 62.78" style="background-color: #fff;">
+              <path id="text-circle" fill="none" d="M.13 62.78a62.64 62.64 0 1 1 125.29 0"/>
+              <text aria-hidden="true" dx="13">
+                <textPath href="#text-circle">
+                  My Projects
+                </textPath>
+              </text>
+            </svg>
+            <h2 class="sr-only">My Projects</h2>
+          </div>
+        </div>
+        <div class="row pb-6">
+          <div class="col-md-5 col-12 pb-6 pb-md-0">
+            {{> partials/project-card-evolution}}
+          </div>
+          <div class="col-md-5 offset-md-2 offset-0 col-12">
+            {{> partials/project-card-cluster}}
+          </div>
+        </div>
+      </div>
+      {{> partials/footer}}
+    </div>
+    {{> partials/scripts}}
+    <script src="./project-detail.js"></script>
+    <script src="./about.js"></script>
+  </body>
+</html>

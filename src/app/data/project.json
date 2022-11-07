@@ -1,9 +1,14 @@
 {
   "page": {
     "author": "Dylan Hyun",
-    "keywords": "Dylan Hyun, Dylan, Hyun, design, development, UX, UI, portfolio",
+    "keywords": "Dylan Hyun, Hyun, design, development, UX, UI, portfolio",
     "name": "Dylan Hyun Design",
     "favicon": "./assets/logo-sq.svg",
     "title": "Dylan Hyun Design"
+  },
+  "evolution": {
+    "keywords": "Prudential, design system, Dylan Hyun, Hyun, design, development, UX, UI, portfolio",
+    "name": "Evolutuion DS | Dylan Hyun Design",
+    "title": "Evolutuion DS | Dylan Hyun Design"
   }
 }

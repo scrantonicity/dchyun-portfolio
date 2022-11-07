@@ -1,4 +1,5 @@
 @use "../../foundation/variables" as *;
+@use "../hyun-utilities" as *;
 @use "../hyun-variables" as *;
 
 .project-card {
@@ -8,14 +9,15 @@
   background-color: var(--theme-primary);
   border-radius: $hyun-border-radius;
   z-index: 1;
+  overflow: hidden;
 
   &__image {
     img {
+      @extend .img-cover;
+
       border: $hyun-border-width-sm solid $hyun-white;
       border-radius: $hyun-border-radius-sm;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
+      aspect-ratio: 1;
     }
   }
 
@@ -27,6 +29,7 @@
 
     color: var(--theme-secondary);
     font-size: $font-size-lg;
+    font-weight: 400;
     text-decoration: none;
     position: relative;
 

@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="{{page.author}}">
-    <meta name="keywords" content="{{page.keywords}}">
-    <meta name="{{page.name}}">
+    <meta name="keywords" content="{{evolution.keywords}}">
+    <meta name="{{evolution.name}}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="{{page.favicon}}" type="image/png" sizes="16x16">
-    <title>{{page.title}}</title>
+    <title>{{evolution.title}}</title>
     {{> partials/head}}
   </head>
   </head>
@@ -18,11 +18,11 @@
       {{> partials/navigation}}
       <div class="container bg-white">
         <div class="row py-7">
-          <div class="col-lg-7 col-12 pb-lg-0 pb-6">
+          <div class="col-lg-7 col-12 pb-lg-0 pb-6 pr-lg-4 pr-0">
             <h1 class="project__title text-primary mb-2">Evolution Design System</h1>
             <span class="h4 font-weight-light text-primary d-block mb-2">Prudential</span>
             <span class="text-lg font-weight-bold d-block mb-5">Sep. 2020 - Present</span>
-            <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="text-lg">Building a new company-wide design system from the ground up. Leading the digital “evolution” of a 140 year old company to redefine its standing in the financial services industry.</p>
           </div>
           <div class="col-lg-5 col-12">
             <div class="project__info-box">
@@ -59,8 +59,7 @@
       <div class="container bg-gray-light">
         <div class="row pt-6 pb-6">
           <div class="col d-flex align-items-center justify-content-center">
-            {{!-- <div class="project__img-full-width" style="background-image: url('./assets/evolution-header-2.jpg')"></div> --}}
-            <img class="w-100" alt="Layout of buttons, cards, typography, colors for new design system" src="./assets/evolution-header-3.jpg">
+            <img class="project__img" alt="Layout of buttons, cards, typography, colors for new design system" src="./assets/evolution-header-3.jpg">
           </div>
         </div>
       </div>
@@ -76,48 +75,112 @@
           <div class="col-md-8 col-12">
             <div class="project__section">
               <h2 class="project__anchor text-primary" id="background">Background</h2>
-              <p>Prudential is undergoing a digital transformation to become a customer-obsessed company, but a lack of a consistant design language had lead their digital experiences to become stale and disconected from each other. The lack of a design system across the company had also lead to increased time to market, as most projects required custom design and development work.</p>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Problem</h3>
-              <ul class="mb-6">
+              <p>Prudential is undergoing a digital transformation to become a customer-obsessed company, but a lack of a consistant design language had lead their digital experiences to become stale and disconected from each other.</p>
+              <p>The lack of a design system across the company had also lead to increased time to market, as most projects required custom design and development work.</p>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Problem</h3>
+              <ul>
                 <li>Lack of consistancy in design across platforms</li>
-                <li>Heavy burden on designers and developers for time to create custom components for each new project</li>
-                <li>Rigidity of previous design language led to stale and problematic user experiences</li>
+                <li>Extended timelines for design and development due to creating custom components for each project</li>
+                <li>Rigidity of previous design language leads to stale and problematic user experiences</li>
               </ul>
-              <figure class="project__img-wrapper m-0">
-                <img class="project__img" alt="Old Prudential.com homepage" src="./assets/evolution-old-home.jpg">
+              <figure class="project__img-wrapper">
+                <picture>
+                  <source srcset="./assets/evolution-old-home.jpg" media="(min-width: 992px)">
+                  <img class="project__img project__img-bordered" src="./assets/evolution-old-home-mobile.jpg" alt="Previous Prudential.com homepage">
+                </picture>
                 <figcaption class="text-sm">Previous Prudential.com homepage</figcaption>
               </figure>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Goal</h3>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Goal</h3>
               <p>Create a global design system that...</p>
               <ul>
                 <li>Establishes design consistancy</li>
                 <li>Improves the efficiency of design and development</li>
                 <li>Re-energizes the brand image through world-class user experiences</li>
               </ul>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Constraints</h3>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Constraints</h3>
               <ul>
-                <li>Limited creative freedom due to implementing previous work of a outside agency</li>
-                <li>Required to support development teams across any possible framework</li>
+                <li>Limited creative freedom due to implementing previous mockups from an outside agency</li>
+                <li>Required to support over 10 development teams across multiple front-end frameworks</li>
               </ul>
             </div>
             <div class="project__section">
-              <h2 class="project__anchor text-primary" id="process">Process</h2>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Discovery</h3>
-              <h4 class="h6 font-weight-bold font-open-sans">Competitor Analysis</h4>
+              <h2 class="project__anchor text-primary mt-content" id="process">Process</h2>
+              <h3 class="h4 font-weight-bold font-open-sans text-primary">Discovery</h3>
+              <h4 class="h5 font-weight-bold font-open-sans">Competitor Analysis</h4>
               <p>I conducted a competitor analysis, to see how other companies were establishing, and documenting their design systems. I researched design systems at companies like IBM, Spotify, and Uber.</p>
               <p> I saw that <span class="highlight-pru">comprehensive documentation</span>, and <span class="highlight-pru">ease of adoption</span> were just as important as design in the success of a design system at a large institution.</p>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Strategy</h3>
+              <h4 class="h5 font-weight-bold font-open-sans mt-content">Design and Development Process Review</h4>
+              <p>Using my previous experience working with both design and development, I collected information on the current hurdles in both phases of product development. The issues found fell into several common areas.</p>
+              <ul>
+                <li><span class="highlight-pru">Lack of a common design library</span> lead to extra work required to create new design and development components for each new project</li>
+                <li>Documentation on design practices was missing a central place where it could be shared, leading to inconsistencies in experiences.</li>
+                <li>Since all development work was new for each project, all work was required to go through <span class="highlight-pru">time-consuming ADA reviews</span>.</li>
+              </ul>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Strategy</h3>
+              <h4 class="h5 font-weight-bold font-open-sans">Atomic Design Structure</h4>
+              <p>Our system needed to establish consistency, but leave room for individual flexibility and customization, due to the large scope of projects under its influence. By following the <a href="https://atomicdesign.bradfrost.com/" target="_blank">atomic design</a> framework, we created components that could build on top of each other like puzzle pieces to a larger goal.</p>
+              <figure class="project__img-wrapper">
+                <picture>
+                  <source srcset="./assets/evolution-atomic.jpg" media="(min-width: 992px)">
+                  <img class="project__img" src="./assets/evolution-atomic-mobile.jpg" alt="Atomic design diagram for Evolution Design System">
+                </picture>
+              </figure>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Contribution Process</h4>
+              <p>For current teams, two of the most time consuming steps in any development process were design review and ADA review. We wanted to ensure that <span class="highlight-pru">any component in the library is design and ADA approved</span>, before being available.</p>
+              <p>I facilitated conversations with the design and ADA teams, and the development process was ready to be implemented before any development work began.</p>
+              <figure class="project__img-wrapper">
+                <picture>
+                  <img class="project__img" src="./assets/evolution-process.jpg" alt="Contribution to design system diagram showing design and ada review required">
+                </picture>
+                <figcaption class="text-sm">Design to development workflow to add a new component to the design system.</figcaption>
+              </figure>
+              <h5 class="text-lg text-primary font-open-sans font-weight-bold mt-4">Design Feasibility Review</h5>
+              <p>First, while the component is still being designed, a meeting is held with both a UI devloper and a member of the ADA team. The potential designs are evaluated for both development feasibility, and ADA compliance before any development begins.</p>
+              <h5 class="text-lg text-primary mt-content font-open-sans font-weight-bold">Visual QA</h5>
+              <p>The developer and designer review the developer's work and compare it against the original designs. All changes are finalized before ADA review to ensure the ADA team is reviewing the final version of the component.</p>
+              <h5 class="text-lg text-primary mt-content font-open-sans font-weight-bold">ADA Review</h5>
+              <p>The component is fully tested by the ADA team, and must be WCAG 2.1 AA compliant before moving forward. The developed works directly with the ADA professional to address any feedback.</p>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Implementation</h3>
+              <h4 class="h5 font-weight-bold font-open-sans">Style Library</h4>
+              <p>We first built the foundation of the design system as a custom CSS style library. Its goal is to encapsulate all of the base level styles and variables that the rest of the system is built upon.</p>
+              <p>Alongside fellow CSS guru Andrei Ivanov, we co-created the library and chose to base it off Twitter's <a href="https://getbootstrap.com/" target="_blank">Boostrap</a> framework. This gave us the greatest <span class="highlight-pru">flexibility with variables, utilities, and grid structure</span>. Most importantly, it was similar to our last custom CSS library so this would <span class="highlight-pru">reduce the learning curve</span> for the numerous other development teams.</p>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Web Components</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <figure class="project__img-wrapper">
+                <picture>
+                  <source srcset="./assets/evolution-wc.jpg" media="(min-width: 992px)">
+                  <img class="project__img" src="./assets/evolution-wc-mobile.jpg" alt="Contribution to design system diagram showing design and ada review required">
+                </picture>
+              </figure>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Documentation</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Adoption</h3>
+              <h4 class="h5 font-weight-bold font-open-sans">Initial Launch</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Implementation</h3>
+              <figure class="project__img-wrapper">
+                <picture>
+                  <source srcset="./assets/evolution-new-home.jpg" media="(min-width: 992px)">
+                  <img class="project__img project__img-bordered" src="./assets/evolution-new-home-mobile.jpg" alt="New Prudential.com homepage">
+                </picture>
+                <figcaption class="text-sm">New Prudential.com homepage. The first project under the new design system.</figcaption>
+              </figure>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Marketing</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Adoption</h3>
+              <figure class="project__img-wrapper">
+                <picture>
+                  <img class="project__img" src="./assets/evolution-conference.jpg" alt="Conference intro slide with title Playbook Evolution launch and 4 speakers">
+                </picture>
+              </figure>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Workshops</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Collective Ownership</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="project__section">
               <h2 class="project__anchor text-primary" id="key-deliverables">Key Deliverables</h2>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">CSS Style Library</h3>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">CSS Style Library</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <h3 class="h5 font-weight-bold mt-content font-open-sans">Web Component Library</h3>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Web Component Library</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
           </div>
@@ -142,28 +205,10 @@
         </div>
         <div class="row pb-6">
           <div class="col-md-5 col-12 pb-6 pb-md-0">
-            <div class="project-card theme-fw">
-              <div class="project-card__image pb-3">
-                <img src="./assets/prudential.png">
-              </div>
-              <div class="project-card__content">
-                <h3 class="h4 mb-0">Animated Icon Library</h3>
-                <h4 class="h5 font-weight-light mb-4">Prudential</h4>
-                <a class="project-card__link mt-auto" href="#"><span class="link-text">Explore Project</span></a>
-              </div>
-            </div>
+            {{> partials/project-card-dev}}
           </div>
           <div class="col-md-5 offset-md-2 offset-0 col-12">
-            <div class="project-card theme-cluster">
-              <div class="project-card__image pb-3">
-                <img src="./assets/prudential.png">
-              </div>
-              <div class="project-card__content">
-                <h3 class="h4 mb-0">Cluster</h3>
-                <h4 class="h5 font-weight-light mb-4">Deloitte Innovation Competition</h4>
-                <a class="project-card__link mt-auto" href="#"><span class="link-text">Explore Project</span></a>
-              </div>
-            </div>
+            {{> partials/project-card-cluster}}
           </div>
         </div>
       </div>
