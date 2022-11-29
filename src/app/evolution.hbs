@@ -69,6 +69,7 @@
               <li class="tracker-step"><a href="#background">Background</a></li>
               <li class="tracker-step"><a href="#process">Process</a></li>
               <li class="tracker-step"><a href="#key-deliverables">Key Deliverables</a></li>
+              <li class="tracker-step"><a href="#takeaways">Takeaways</a></li>
             </ul>
           </div>
           <div class="col-md-8 col-12">
@@ -93,7 +94,7 @@
               <p>Create a global design system that...</p>
               <ul>
                 <li>Establishes design consistancy</li>
-                <li>Improves the efficiency of design and development</li>
+                <li>Improves the efficiency of the design and development process</li>
                 <li>Re-energizes the brand image through world-class user experiences</li>
               </ul>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Constraints</h3>
@@ -103,7 +104,7 @@
               </ul>
             </div>
             <div class="project__section">
-              <h2 class="project__anchor text-primary mt-content" id="process">Process</h2>
+              <h2 class="project__anchor text-primary" id="process">Process</h2>
               <h3 class="h4 font-weight-bold font-open-sans text-primary">Discovery</h3>
               <h4 class="h5 font-weight-bold font-open-sans">Competitor Analysis</h4>
               <p>I conducted a competitor analysis, to see how other companies were establishing, and documenting their design systems. I researched design systems at companies like IBM, Spotify, and Uber.</p>
@@ -144,7 +145,12 @@
               <p>We first built the foundation of the design system as a custom CSS style library. Its goal is to encapsulate all of the base level styles and variables that the rest of the system is built upon.</p>
               <p>Alongside fellow CSS guru Andrei Ivanov, we co-created the library and chose to base it off Twitter's <a href="https://getbootstrap.com/" target="_blank">Boostrap</a> framework. This gave us the greatest <span class="highlight-pru">flexibility with variables, utilities, and grid structure</span>. Most importantly, it was similar to our last custom CSS library so this would <span class="highlight-pru">reduce the learning curve</span> for the numerous other development teams.</p>
               <h4 class="h5 font-weight-bold mt-content font-open-sans">Web Components</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+              <p>To build on top of our style library our design system was <span class="highlight-pru">built using W3C standard web components</span>. This choice allowed us to accomplish two important goals...</p>
+              <ul>
+                <li>Ensure consistency in styles and functionality across any project</li>
+                <li>Support any front end framework</li>
+              </ul>
+              <p>It also improved the flexibility when teams used the component, as making small changes could give a wide array of customization options for each component. For example, just changing two attributes on our button component, color style and icon, could produce all of the button types seen below.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-wc.jpg" media="(min-width: 992px)">
@@ -155,7 +161,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Adoption</h3>
               <h4 class="h5 font-weight-bold font-open-sans">Initial Launch</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>The first project to launch using the new design system was the Prudential.com homepage. It was a great test of the system's cohesion, as the entire page was built using only the new system. Overall, the page was a success as it greatly improved the ease of doing business (EODB) scores and is what led to the design system gaining future adoption across other projects.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-new-home.jpg" media="(min-width: 992px)">
@@ -164,7 +170,8 @@
                 <figcaption class="text-sm">New Prudential.com homepage. The first project under the new design system.</figcaption>
               </figure>
               <h4 class="h5 font-weight-bold mt-content font-open-sans">Marketing</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>We knew the design system should be adopted company wide from the start, but one thing we wanted to do was come from a place of benefit not requirement for people. We wanted to focus on the benefits of the system, not have it seen as another hurdle.</p>
+              <p>Once the system launched, we went around to teams and showed them how it worked. I would talk with designers and developers and focus on showing the ease of use and the flexibility. In one such talk, we presented the system at our first internal design conference.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <img class="project__img" src="./assets/evolution-conference.jpg" alt="Conference intro slide with title Playbook Evolution launch and 4 speakers">
@@ -181,6 +188,20 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Web Component Library</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="project__section">
+              <h2 class="project__anchor text-primary" id="takeaways">Takeaways</h2>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Outcomes</h3>
+              <ul>
+                <li>Created the first global design system at Prudential of over 80 components to date</li>
+                <li>Increased efficiency for both designers and developers</li>
+                <li>Used by over 200 designers and developers</li>
+              </ul>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Learnings</h3>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Importance of Support and Adoption</h4>
+              <p>A design system is only as successful as the support of those asked to use it. Buy in from senior leadership, and the designers and developers asked to use it is crucial. The first job should be to meet the needs of those who need it, not hinder their work.</p>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Flexibility vs. Conformity</h4>
+              <p>A design system needs to find the right balance between establishing rules to follow and a system that shows conformity across projects. However, design will always move forward and push boundaries. Your system needs to be rigid enough to show a common design language, but flexible enough to give designers the space to explore new and improved ideas.</p>
             </div>
           </div>
         </div>
