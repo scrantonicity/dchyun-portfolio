@@ -5,8 +5,7 @@
 .project__info-box {
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: $spacer-3;
+  padding: $spacer-4;
   border: $hyun-border-width-sm solid var(--theme-primary);
   border-radius: $hyun-border-radius-sm;
 
@@ -26,13 +25,17 @@
 }
 
 // Images
+.project__img-wrapper figcaption {
+  margin-top: $spacer-1;
+}
+
 .project__img {
   width: 100%;
 }
 
-.project__img-bordered {
-  border: $hyun-border-width-xs solid var(--theme-primary);
+.project__img.project__img-bordered {
   border-radius: $hyun-border-radius-xs;
+  box-shadow: 0 6px 8px rgba(0,0,0,.2);
 }
 
 .project__img-full-width {
@@ -67,7 +70,7 @@
     }
 
     &.step-incomplete {
-      color: var(--theme-primary);
+      color: var(--theme-link);
     }
 
     &:not(:last-child) {
@@ -88,4 +91,17 @@
 // Content
 .project__section:not(:last-child) {
   padding-bottom: $spacer-6;
+}
+
+// Role
+.content-points__item {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: $spacer-3;
+  color: #fff;
+  background-color: var(--theme-primary);
+  // border: 1px solid var(--theme-primary);
+  border-radius: $hyun-border-radius-sm;
+  box-shadow: 0 6px 8px rgba(0,0,0,.2);
 }

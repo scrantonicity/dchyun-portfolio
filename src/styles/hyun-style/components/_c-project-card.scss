@@ -4,21 +4,31 @@
 
 .project-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding: $spacer-4;
   color: $hyun-white;
   background-color: var(--theme-primary);
   border-radius: $hyun-border-radius;
   z-index: 1;
+  height: 100%;
   overflow: hidden;
 
   &__image {
     img {
       @extend .img-cover;
 
+      max-height: 30rem;
       border: $hyun-border-width-sm solid $hyun-white;
       border-radius: $hyun-border-radius-sm;
       aspect-ratio: 1;
     }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   &__link {
@@ -93,6 +103,8 @@
   $card-max-height: 45rem;
 
   &__lg {
+    flex-direction: row;
+    height: auto;
     min-height: $card-max-height;
 
     .project-card__content {
@@ -108,6 +120,8 @@
     }
 
     @media screen and (min-width: map-get($grid-breakpoints, md)) {
+      height: 100%;
+
       .project-card__content {
         order: 1;
       }
@@ -118,6 +132,23 @@
         img {
           max-height: $card-max-height - 5rem;
         }
+      }
+    }
+  }
+
+  &.theme-migration {
+    .project-card__link {
+      color: $hyun-white;
+
+      .link-text {
+        &::before,
+        &::after {
+          background-color: $hyun-white;
+        }
+      }
+
+      &::before {
+        background-color: $hyun-white;
       }
     }
   }

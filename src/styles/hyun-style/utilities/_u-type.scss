@@ -100,6 +100,22 @@ li:not(:last-child) {
   margin-top: 1.15em;
 }
 
+// Spotlight
+.text-spotlight {
+  position: relative;
+  padding-left: $spacer-3;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 5px;
+    height: 100%;
+    background-color: var(--theme-secondary);
+  }
+}
+
 // Highlight - Theme based
 $highlight-opacity: .2;
 
@@ -109,4 +125,12 @@ $highlight-opacity: .2;
 
 .highlight-pru {
   background-color: rgba($pru-primary, $highlight-opacity);
+}
+
+.highlight-migration {
+  background-color: rgba($migration-secondary, $highlight-opacity);
+}
+
+.highlight-workshop {
+  background-color: rgba($workshop-primary, $highlight-opacity);
 }

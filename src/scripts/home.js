@@ -1,6 +1,7 @@
 // Assets
-import pruHero from '../app/assets/pru-hero.png'
-import evolutionSq from '../app/assets/evolution-sq.jpg';
+// import pruHero from '../app/assets/pru-hero.png'
+// import evolutionSq from '../app/assets/evolution-sq.jpg';
+// import migrationSq from '../app/assets/migration-sq.jpg';
 
 // Logo Animation
 function setUpAnimation() {

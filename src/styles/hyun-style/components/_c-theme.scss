@@ -5,40 +5,33 @@ body {
   --theme-primary: #{$hyun-red};
   --theme-secondary: #{$hyun-white};
   --theme-text: #{$hyun-white};
+  --theme-link: #{$hyun-red};
 }
 
 .theme-hyun {
   --theme-primary: #{$hyun-red};
   --theme-secondary: #{$hyun-white};
   --theme-text: #{$hyun-white};
+  --theme-link: #{$hyun-red};
 }
 
 .theme-prudential {
   --theme-primary: #{$pru-primary};
   --theme-secondary: #{$pru-secondary};
   --theme-text: #{$hyun-white};
+  --theme-link: #{$pru-primary};
 }
 
-// .theme-fw {
-//   --theme-primary: #{$fw-primary};
-//   --theme-secondary: #{$hyun-white};
-//   --theme-text: #{$hyun-white};
-// }
-
-.theme-help {
-  --theme-primary: #{$help-primary};
-  --theme-secondary: #{$hyun-white};
-  --theme-text: #{$hyun-white};
+.theme-migration {
+  --theme-primary: #{$migration-primary};
+  --theme-secondary: #{$migration-secondary};
+  --theme-text: #{$migration-secondary};
+  --theme-link: #{$migration-secondary};
 }
 
-.theme-cluster {
-  --theme-primary: #{$cluster-primary};
+.theme-workshop {
+  --theme-primary: #{$workshop-primary};
   --theme-secondary: #{$hyun-white};
   --theme-text: #{$hyun-white};
-}
-
-.theme-birds {
-  --theme-primary: #{$birds-primary};
-  --theme-secondary: #{$hyun-white};
-  --theme-text: #{$hyun-white};
+  --theme-link: #{$workshop-primary};
 }
