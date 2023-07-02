@@ -2,7 +2,7 @@
 @use "../hyun-variables" as *;
 
 .section-hero {
-  height: 100svh;
+  min-height: 100svh;
   background-color: var(--theme-primary);
 
   .hero {

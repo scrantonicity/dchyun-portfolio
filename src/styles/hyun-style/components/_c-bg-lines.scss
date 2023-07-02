@@ -11,8 +11,8 @@
 }
 
 $width-diff: 21px;
-$height: 10vh;
-$height-diff: 3vh;
+$height: 10svh;
+$height-diff: 3svh;
 
 .line {
 
@@ -20,41 +20,30 @@ $height-diff: 3vh;
     &.line-left,
     &.line-right {
       &::before {
-        top: 100vh - ($height - $height-diff);
+        top: 100svh - ($height - $height-diff);
         height: $height - $height-diff;
       }
     }
 
     &.line-center {
       &::before {
-        top: 100vh - $height;
+        top: 100svh - $height;
         height: $height;
       }
     }
   }
-
-  // &.line-top-footer {
-  //   &.line-center {
-  //     &::before {
-  //       bottom: 0;
-  //       height: $height - $height-diff;
-  //     }
-  //   }
-  // }
 
   &.line-top {
     &.line-left,
     &.line-right {
       &::before {
         top: $height-diff;
-        // height: $height - $height-diff;
       }
     }
 
     &.line-center {
       &::before {
         top: 0;
-        // height: $height;
       }
     }
   }
@@ -69,7 +58,7 @@ $height-diff: 3vh;
 
     &.line-center {
       &::before {
-        bottom: 100vh - $height-diff;
+        bottom: 100svh - $height-diff;
         height: $height-diff;
       }
     }
